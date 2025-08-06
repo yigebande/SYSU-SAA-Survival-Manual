@@ -1,0 +1,902 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../drawing/drawing/">
+      
+      
+        <link rel="next" href="../../Sophomore/Machine%20Intelligence/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>程序设计 - SYSU SAA Survival Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SYSU SAA Survival Manual" class="md-header__button md-logo" aria-label="SYSU SAA Survival Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYSU SAA Survival Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              程序设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SYSU SAA Survival Manual" class="md-nav__button md-logo" aria-label="SYSU SAA Survival Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SYSU SAA Survival Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    前言
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Opinions%20On%20Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    我个人的学习观点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Math%20Tools/Tools%20For%20Mathematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数学工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../drawing/drawing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    画图工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大一
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            大一
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    程序设计
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    程序设计
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      课程简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      适用于任何涉及到程序设计的课程的注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人经验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人感悟
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="个人感悟">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      大作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大二
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            大二
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Machine%20Intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器智能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Interpretation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初级实用口译
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Automatic%20Control%20Theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自动控制原理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Missile%20Flight%20Dynamics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    导弹飞行力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Fundamental%20Space%20Science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    空间科学基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Structural%20Mechanics%20Of%20Aircraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    飞行器结构力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Orbital%20Mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    航天器轨道动力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Method%20Of%20Numerical%20Computation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数值计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3DownCountry/3DownCountry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    三下乡
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../After%20Graduation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    航院研究生毕业去向
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      课程简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      适用于任何涉及到程序设计的课程的注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人经验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人感悟
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="个人感悟">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      大作业
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="c">程序设计（C语言）</h1>
+<h2 id="_1">课程简介</h2>
+<ul>
+<li>前置条件：无</li>
+</ul>
+<h2 id="_2">适用于任何涉及到程序设计的课程的注意事项</h2>
+<ol>
+<li>不要让你的舍友来给你debug，没有人有会是你的私家侦探 🪲</li>
+<li>如果你的代码风格很糟糕，请不要强迫别人看你的代码，伤害别人的眼睛 👀</li>
+<li>如果你一点注释都不写，那么不要把你的代码文件发给你的舍友，让舍友猜你在想什么 🤔</li>
+<li>如果你已经理解自己的代码错在哪里了，那就自己知道就好，不要强行把那正在认真敲代码的舍友打断然后讲解你自己的反思 🤐</li>
+<li>不要好为人师，有的人享受独立思考和独立解决问题的过程，如果别人没有明确的请求，不要“伸出援手” 😑</li>
+</ol>
+<h2 id="_3">个人经验</h2>
+<p>这门课对于那些高中就有算法竞赛经历的同学来说是小菜一碟，如果你像我一样是零基础的，只要紧跟老师上课的内容，课后作业好好做，大作业不摆烂，就能够保证你不会挂科。</p>
+<p>23年期末考试考的是手写卷子，那时考了个手写冒泡法排序英语单词，没有上机考试，不知道以后会不会改变考核形式。</p>
+<p>在网上有很多人推荐浙江大学翁恺老师的C语言课程，我在大一寒假的时候有看过一部分的课，主要是学习链表（Linked list），航院的C语言课不涉及链表，如果你希望精进C语言的话那我的确会建议你看一看。</p>
+<p>学完C语言后再去学其他编程语言是很快就能上手的，我在学<a href="https://cs61a.org/">CS61A</a>的时候很庆幸自己学过了C语言，大二后会有很多课程涉及到MATLAB，因此<strong>C语言一定要好好学</strong>。</p>
+<p>大二上的数值计算方法课的实验课的编程语言也是C语言。</p>
+<p>大二下的科创课（无人机方向）可能会涉及到C++和Ubuntu（一种Linux系统）以及<a href="http://dev.ros2.fishros.com/">ROS</a>（ROS是用于构建机器人应用的软件库和工具集），还有GNU make，cmake等工具（复现别人论文成果会用到），这种情况下只会C语言就不够用了。哦对了，这些知识老师都不教的，你得自学。</p>
+<p>如果你的目的只是通过考试的话，对于一些高深的知识，比如说GNU make，cmake还有wsl2和Linux，都是没有必要在学期中去学的（知乎经常给我推送批判中国大学的计算机教育非常不合理的内容，但我个人觉得这些内容很容易误导非计算机专业的学生），毕竟考试不考，而且你还得学其他科目。大作业会要求把代码打包成可执行文件，因为指定的IDE是Visual Studio，可以直接上网搜索如何利用Visual Studio生成可执行文件。</p>
+<p>合理使用AI工具，比如Deepseek，尤其是<a href="https://cursor.com/cn">Cursor</a>可以了解一下。</p>
+<p>如果你学完C语言后意犹未尽，想继续踏上CS自学之旅，那么不妨前往<a href="https://csdiy.wiki/">CS自学指南</a>。</p>
+<h2 id="_4">个人感悟</h2>
+<p>大一的C语言程序设计基础课算是我真正的梦开始的地方。</p>
+<p>初中的时候，我接触过Python，为了学习我在网上找了一大堆封面看起来很酷炫的电子书。由于没有明确的学习方向，我坚持学了一段时间，但收获甚少，最终只是能够把书上的例子抄在代码编辑器的程度。大一军训期间我尝试过在B站上找Python公开课来学习，不过忘记了是什么原因就没有坚持学下去。</p>
+<p>因此，我相当于是从0开始学编程的。刚开始上理论课的时候我感觉到非常吃力，比方说老师写了一个<code>int max(int x, int y)</code>的函数，我可以看懂<code>max(1, 2)</code>是什么意思，但是如果写成<br><code>max(2, max(10, 1))</code>，我就得思考半天，因为在我看来<code>max</code>的第二个位置明明必须是一个整形，怎么可以放一个“函数”呢？直到后来我对<code>return</code>有了一定的了解之后，我才明白这种写法的含义。</p>
+<p>程序设计的实验课是我最喜欢的课，因为通过做<a href="https://pintia.cn/home">PTA</a>（其实我很奇怪为什么航院的C语言实验课不用中大的matrix，反而用浙大的PTA）上面的编程题能够让我清楚地认识到自己都学会了哪些知识，我很享受不断去优化代码的过程，很享受为了解决各种各样的特殊条件而绞尽脑汁并且最后全部测试都通过的成就感。</p>
+<p><img alt="" src="../images/MyPacmanMenu.png" /></p>
+<h3 id="_5">大作业</h3>
+<p>最后的大作业则是让我真正踏上CS自学之路的最重要的因素。我的小组的大作业是一个吃豆人小游戏，整个项目，除了写报告之外，至少有99%的工作，包括素材搜集和代码编写，都是我一个人完成的。</p>
+<p>刚开始做大作业的时候我的确知道有哪些功能是要做的，但是对于代码实现，我真的是一筹莫展，尤其是给ghost设计寻路算法这一环节。虽然我已经学完了C语言的基础知识，但是真正去进行“程序设计”，我真的是束手无策。</p>
+<p>最开始我想到的办法是，去Github上找别人的项目，改几个变量名和参数作为自己的项目。</p>
+<p>然而，那些项目涉及到的知识都远远超出课堂所包含知识的范围，如果老师或者助教突然问我某个功能是如何实现的，那我必然露出马脚。于是我放弃了剽窃他人成果这条路。小组里面没有编程大佬，并且大家都有各自的事情要做，而恰好我是对这方面最感兴趣的，只能说，靠天靠人不如靠自己。</p>
+<p>幸好，我在B站上找到了关于easyX和C语言写吃豆人的教程视频，于是我就一边跟着视频教程，一边敲自己的代码。专心投入到大作业代码的编写的那几天是我学习热情最高涨，学习效率不断突破上限的几天，一看完视频我就能把相应的功能实现，我感觉自己就是某个单机游戏里面的主角，一路高歌猛进地推进主线，屏幕上方源源不断地跳出解锁成就的通知，持续推动我继续往下学。</p>
+<p>在完成大作业的过程中，我学到了非常多课堂上老师没有讲清楚但是我一直很好奇的东西，比如C语言里面的<code>.h</code>头文件，<code>extern</code>外部变量，为什么需要自定义函数而不是把所有功能都只写在一个主函数里面，如何把写好的代码打包成<code>.exe</code>文件，等等。</p>
+<p>最终，我完成了这个吃豆人小游戏。</p>
+<p>比较可惜的是没有实现ghost（图片上的卡比）的寻路算法，因为我找到的跟寻路算法相关的教学视频都涉及到数据结构，我觉得学数据结构会花上不少的时间，大作业的提交迫在眉睫，我不得不放弃。</p>
+<p>成绩出来后，我的C语言实验课（PTA作业和大作业综合得分）取得了一个相当不错的成绩，然而，我感觉我的成就感更多地是来源于——我靠着自学做完了这个小游戏。从此，我便踏上了CS自学之路。</p>
+<p><img alt="" src="../images/MyPacmanGameplay.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

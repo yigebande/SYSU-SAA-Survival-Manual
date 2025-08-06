@@ -1,0 +1,876 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Sophomore/Method%20Of%20Numerical%20Computation/">
+      
+      
+        <link rel="next" href="../../After%20Graduation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>三下乡 - SYSU SAA Survival Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SYSU SAA Survival Manual" class="md-header__button md-logo" aria-label="SYSU SAA Survival Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYSU SAA Survival Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              三下乡
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SYSU SAA Survival Manual" class="md-nav__button md-logo" aria-label="SYSU SAA Survival Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SYSU SAA Survival Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    前言
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Opinions%20On%20Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    我个人的学习观点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Math%20Tools/Tools%20For%20Mathematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数学工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../drawing/drawing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    画图工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大一
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            大一
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Freshman/Programming%20Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    程序设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大二
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            大二
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Machine%20Intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器智能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Interpretation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初级实用口译
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Automatic%20Control%20Theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自动控制原理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Missile%20Flight%20Dynamics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    导弹飞行力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Fundamental%20Space%20Science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    空间科学基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Structural%20Mechanics%20Of%20Aircraft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    飞行器结构力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Orbital%20Mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    航天器轨道动力学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sophomore/Method%20Of%20Numerical%20Computation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数值计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    三下乡
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    三下乡
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人感受（部分）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="个人感受（部分）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      从游戏到现实
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audentes-fortuna-iuvat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audentes Fortuna Iuvat（幸运眷顾勇者）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../After%20Graduation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    航院研究生毕业去向
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人感受（部分）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="个人感受（部分）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      从游戏到现实
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audentes-fortuna-iuvat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audentes Fortuna Iuvat（幸运眷顾勇者）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">三下乡</h1>
+<p>三下乡的经历我永远难忘，但是如果我把我的真实感受公布在网络上，这份文档可能会被无形的大手给抹去</p>
+<h2 id="_2">注意</h2>
+<ul>
+<li>三下乡不是免费<strong>旅游</strong></li>
+<li>如果你吃不了苦，需要足够的睡眠时间，那就不要报名三下乡，把这部分时间花在尽情地玩乐上会更有价值</li>
+<li>如果你是提前去的，那么学会和老乡打交道很重要</li>
+<li>如果你是技术组的核心成员，不要指望三下乡会给你带来很多快乐，干活才是你的首要任务</li>
+<li>自备生活用品可以让你的三下乡生活更加舒适一点</li>
+<li>如果你想台上三分钟，却<strong>深藏功与名</strong></li>
+</ul>
+<h2 id="_3">个人感受（部分）</h2>
+<p>跟缺乏娱乐和无所事事地待在家里相比，三下乡的生活还是很有意义的。三下乡究竟给我带来了哪些技术方面的进步，我不好说，但是可以肯定的是，我的而且确通过三下乡拓宽了自己的眼界，也丰富了日常生活的经验。</p>
+<h3 id="_4">从游戏到现实</h3>
+<p>大二寒假以来我一直都沉迷在天国拯救，一代打完没多久，看到epic商城有折扣，就忍不住买了二代。原本我对天国拯救里面的地图界面没有什么特别的感受，直到我真正去到清远连州的东陂镇，在大疆司空2的里，我看到了和游戏地图非常类似的卫星地图。乡镇和村子在地图上星罗棋布，跟天国拯救相比，连州的地图上还有许多大大小小的山。我可以给无人机划定好航线，在不同的地方拍下照片，恍惚间有种快速旅行的感觉。那些在车上感觉很远的地方，在地图上看起来却很近。</p>
+<p><a href="https://gl.ali213.net/html/2025-2/1614397.html"><img alt="" src="../images/KDC2MapOfTrosky.jpeg" /></a></p>
+<h3 id="audentes-fortuna-iuvat">Audentes Fortuna Iuvat（幸运眷顾勇者）</h3>
+<p>我和一位同学和一位师兄是跟着老师提前去的连州，这几天里我们得自行解决吃饭问题。第一天的晚饭，我和两位同学一起去到了楼下的饭店。我们当时想吃便宜点的，看见里面的桌子不是很大，就以为这是一家快餐店。</p>
+<p>如果没有但是，那就太不符合我的文字风格了。</p>
+<p>我们拿过菜单一看，大家都倒吸一口凉气，菜单上面每个菜都是硬菜，就连最简单的紫菜蛋花汤也得几十块钱。那时候大家的脸皮都比较薄，不好意思换一家店，便硬着头皮点了一个硬菜和两个简单的菜。到最后吃完，还剩下非常多的紫菜蛋花汤，感觉好像吃饱了，好像又没有吃饱。</p>
+<p>最后面结账的时候，老板问我们是不是三下乡的，我说是，然后她给我们优惠了十几块钱来抹了个零。</p>
+<p>走出饭店，师兄说：“这么吃下去可遭不住呀。” 我们三个人都这么觉得。所以，第二天午饭时分，我们三人就在东陂镇搜索起快餐店来。那一天的太阳非常猛烈，我们都没有带伞，强烈的高温让我的食欲瞬间降到冰点。搜索的路途从北到南，连续经过好几家“早餐店”为招牌的餐饮店，没有桌椅的烧腊专卖店和连州特色水角店之后，我们捕捉到了一家招牌上写着“快餐”两个字的饭店。</p>
+<p>我们怀揣着激动的心推开了这家店的玻璃门，看到里面坐着刚刚摘下安全帽的在大声聊天的工人大叔，我顿时感觉稳了，肯定可以吃上便宜一点的饭菜了。</p>
+<p>老板一家子都在厨房里忙活，我向老板打招呼，但是没有得到回应。我们还没打算坐下，因为桌子上没有看见菜单，刚刚还“稳了”的心突然又悬了起来。我发现厨房窗户旁边的桌子上有菜单，于是拿起一张来看。</p>
+<p>太可惜了，菜单上几乎又全是最低三十多块的菜。</p>
+<p>我已经不想再在太阳底下走动了，于是鼓起勇气，问老板有没有快餐卖。老板很自然地跟我们说有快餐，只是没写在菜单上而已，还有就是快餐的搭配非常灵活，一般来说都是厨房有什么就可以做什么，所以口头点菜会更加方便。</p>
+<p>我们点了三个菜，没过多久，老板就把菜端上来了。</p>
+<p>我敢说，这是我吃过的最美味的快餐。</p>
+<p>没有任何的预制菜，只有最纯粹的厨艺和能够极大激发人食欲的锅气。朴实无华的菜品搭配经过老板高超技艺的烹饪，迎来了至高的升华。而且这些快餐都是统一15块钱一份，分量非常充足，并且米饭免费，性价比非常高。</p>
+<p>从此，我们就几乎都在这一家店吃饭。</p>
+<p><img alt="" src="../images/MarketDay.jpg" /></p>
+<p>有一天在这里吃饭的时候，我看到厨房外面摆满了蔬菜，我问老板那一天是什么日子。老板说是赶集日，每五天一次。在很小的时候，我经常听大人说“吵天巴闭，趁圩啊？（粤西白话，在珠三角可能读作‘嘈喧巴闭’，意思为吵吵嚷嚷，闹哄哄）”，我在县城长大，从来没见过乡镇的赶集。前面几天东陂镇的白天的街道是不怎么热闹的，恰好遇到赶集日，又恰好我问了老板，我才终于知道什么是赶集，或者说“趁圩”。</p>
+<p>回到这部分的小标题——Audentes Fortuna Iuvat（幸运眷顾勇者），我想说的是，无论遇到什么事情，都要勇敢开口去问和提出要求。以前的我总会感到“不好意思去做某些事情”，然而实际上，把自己的想法和需求说出来并不丢人，勇敢拒绝也不丢人。以前的我确实是因为各种各样的“不好意思”，吃了很多本来可以避免的亏，错失了很多机会。当你点了一份“蛋肉炒粉”而上来的是一份“蛋炒粉”的时候，跟老板指出缺少的肉，正常的老板会觉得是自己粗心大意犯了错，然后把炒粉拿回厨房重炒，而不正常的老板才会无理取闹，责怪你没有讲清楚要求。</p>
+<p>在深圳这个发达的大城市里，相当大一部分的餐馆都支持扫码点餐，这对于i人来说是一项及其伟大的发明。而在像东陂镇这些扫码点餐尚未普及的地方，和老板打交道是下馆子的一项必备技能。这里不讨论扫码点餐的利弊。我想说的是，这种必须人与人面对面交流的环境，确实能让人学到很多东西：了解当地的风土人情，学会赞美和评价，学会询问和提出要求……</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
