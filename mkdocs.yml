@@ -19,5 +19,8 @@ nav:
   - 三下乡: 3DownCountry/3DownCountry.md
   - 航院研究生毕业去向: After Graduation.md
 
+repo_url: https://github.com/yigebande/SYSU-SAA-Survival-Manual
+repo_name: SYSU-SAA-Survival-Manual
+
 theme:
   material
