@@ -1,0 +1,23 @@
+site_name: SYSU SAA Survival Manual
+
+nav:
+  - 前言: index.md
+  - 我个人的学习观点: Opinions On Study.md
+  - 数学工具: Math Tools/Tools For Mathematics.md
+  - 画图工具: drawing/drawing.md
+  - 大一:
+    - 程序设计: Freshman/Programming Design.md
+  - 大二:
+    - 机器智能: Sophomore/Machine Intelligence.md
+    - 初级实用口译: Sophomore/Interpretation.md
+    - 自动控制原理: Sophomore/Automatic Control Theory.md
+    - 导弹飞行力学: Sophomore/Missile Flight Dynamics.md
+    - 空间科学基础: Sophomore/Fundamental Space Science.md
+    - 飞行器结构力学: Sophomore/Structural Mechanics Of Aircraft.md
+    - 航天器轨道动力学: Sophomore/Orbital Mechanics.md
+    - 数值计算方法: Sophomore/Method Of Numerical Computation.md
+  - 三下乡: 3DownCountry/3DownCountry.md
+  - 航院研究生毕业去向: After Graduation.md
+
+theme:
+  material
