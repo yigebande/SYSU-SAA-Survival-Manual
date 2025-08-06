@@ -2,5 +2,6 @@
 
 2025年8月6日 还没写完
 
-![Static Badge](https://img.shields.io/badge/website-SYSU%20SAA%20Survival%20Manual-blue?style=flat&link=https%3A%2F%2Fyigebande.github.io%2FSYSU-SAA-Survival-Manual%2F&link=https%3A%2F%2Fyigebande.github.io%2FSYSU-SAA-Survival-Manual%2F)
+[![Static Badge](https://img.shields.io/badge/website-SYSU%20SAA%20Survival%20Manual-blue?style=flat)
+](https://yigebande.github.io/SYSU-SAA-Survival-Manual/)
 
