@@ -3,10 +3,19 @@ site_name: SYSU SAA Survival Manual
 nav:
   - 前言: index.md
   - 我个人的学习观点: Opinions On Study.md
+  - 实用工具与技巧: 
+    - Markdown: Powerful Tools And Techniques/Markdown.md
+    - 盲打: Powerful Tools And Techniques/Touch Typing.md
+    - Vim: Powerful Tools And Techniques/Vim.md
+    - Git: Powerful Tools And Techniques/Git.md
+    - LaTeX: Powerful Tools And Techniques/LaTeX.md
+    - typst: Powerful Tools And Techniques/typst.md
+    - AxMath: Powerful Tools And Techniques/AxMath.md
   - 数学工具: Math Tools/Tools For Mathematics.md
   - 画图工具: drawing/drawing.md
   - 大一:
     - 程序设计: Freshman/Programming Design.md
+    - 工程制图: Freshman/Engineering Drawing And CAD.md
   - 大二:
     - 机器智能: Sophomore/Machine Intelligence.md
     - 初级实用口译: Sophomore/Interpretation.md
