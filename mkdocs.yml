@@ -1,5 +1,5 @@
 site_name: SYSU SAA Survival Manual
-
+site_author: yigebande
 nav:
   - 前言: index.md
   - 我个人的学习观点: Opinions On Study.md
@@ -32,4 +32,16 @@ repo_url: https://github.com/yigebande/SYSU-SAA-Survival-Manual
 repo_name: SYSU-SAA-Survival-Manual
 
 theme:
-  material
+  name: material
+
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yigebande/SYSU-SAA-Survival-Manual
+
+plugins:
+  - git-revision-date
+  
