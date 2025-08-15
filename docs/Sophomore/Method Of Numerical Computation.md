@@ -1,8 +1,8 @@
 # 数值计算方法
 ## 课程简介
 - **前置条件：** C/C++，高等数学，线性代数
-- **仅供参考：** [https://github.com/yigebande/SYSU-SAA-Numerical-Analysis-]((https://github.com/yigebande/SYSU-SAA-Numerical-Analysis-))
-- **推荐课程：** [华东师范大学数值分析2024](https://math.ecnu.edu.cn/~jypan/Teaching/NA/index.html)，[南京大学LAMBDA计算方法2024秋](https://www.lamda.nju.edu.cn/wuly/cm2024/)
+- **仅供参考：** [https://github.com/yigebande/SYSU-SAA-Numerical-Analysis-](https://github.com/yigebande/SYSU-SAA-Numerical-Analysis-)
+- **推荐课程：** [华东师范大学数值分析2024](https://math.ecnu.edu.cn/~jypan/Teaching/NA/index.html)
 - **实验课必看：** [适用于任何涉及到程序设计的课程的注意事项](../Freshman/Programming%20Design.md)
 
 > **数值计算方法**有很多名字，在别的地方可能叫做**数值分析**或者**计算机数值方法**

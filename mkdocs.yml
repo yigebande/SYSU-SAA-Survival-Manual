@@ -15,8 +15,15 @@ nav:
   - 数学工具: Math Tools/Tools For Mathematics.md
   - 画图工具: drawing/drawing.md
   - 大一:
+    - 军理课: Freshman/junli.md
+    - 高等数学: Freshman/gaoshu.md
+    - 大学物理: Freshman/dawu.md
     - 程序设计: Freshman/Programming Design.md
     - 工程制图: Freshman/Engineering Drawing And CAD.md
+    - 概率统计: Freshman/Probability And Statistics.md
+    - 线性代数: Freshman/Linear Algebra.md
+    - 理论力学: Freshman/Theoretical Mechanics.md
+    - 航空航天与力学导论: Freshman/Introduction To Aerospace And Mechanics.md
   - 大二:
     - 机器智能: Sophomore/Machine Intelligence.md
     - 初级实用口译: Sophomore/Interpretation.md
@@ -31,6 +38,10 @@ nav:
     - 空气动力学: Sophomore/Aerodynamics.md
     - 电子电工技术: Sophomore/Diangong.md
     - 工程热力学: Sophomore/Engineering Thermodynamics.md
+    - 复变函数: Sophomore/Complex Functions.md
+    - 机械设计基础: Sophomore/Basis Of Mechanical Design.md
+    - 材料力学: Sophomore/Material Mechanics.md
+    - 大学物理实验: Sophomore/General Physics Experiments.md
   - 三下乡: 3DownCountry/3DownCountry.md
   - 航院研究生毕业去向: After Graduation.md
 

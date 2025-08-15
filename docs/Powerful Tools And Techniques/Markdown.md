@@ -12,7 +12,7 @@
 
 有的课程不强制要求word，只要求最终提交的文件是pdf，这个时候操作空间就非常大，Markdown会是很好的选择。
 
-我个人使用用Markdown的场景主要是做算法题的笔记，详情可见我的
+我个人使用Markdown的场景主要是做算法题的笔记，详情可见我的
 [另一个仓库](https://github.com/yigebande/Notes-Of-Algorithm)。
 
-[机器智能](../Sophomore/Machine%20Intelligence.md)的实验课中的Jupyter Notebook中会涉及到少量的Markdown的内容编写，不难，事先学习一下会更好理解。
+[机器智能](../Sophomore/Machine%20Intelligence.md)实验课的Jupyter Notebook中会涉及到少量的Markdown的内容编写，不难，事先学习一下会更好理解。
