@@ -4,7 +4,7 @@
 - **编辑器：** [Overleaf](https://cn.overleaf.com/)，[TeXstudio](https://www.texstudio.org/)，vscode（如果你愿意花时间去折腾的话）
 
 ## 为什么学习LaTeX
-如果你经历过pdf转docs出现的坚不可摧的空白页，word编辑的文字图片突然开始上蹿下跳的情况，你肯定会想要手撕word。
+如果你经历过pdf转docx出现的坚不可摧的空白页，word编辑的文字图片突然开始上蹿下跳的情况，你肯定会想要手撕word。
 
 LaTeX不同于word，它不是“所见即所得”的，它有点像是“用代码去输出文字”。
 
