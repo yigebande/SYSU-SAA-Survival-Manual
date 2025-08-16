@@ -62,5 +62,5 @@ extra:
       link: https://github.com/yigebande/SYSU-SAA-Survival-Manual
 
 plugins:
-  # - git-revision-date
+  - git-revision-date
   
