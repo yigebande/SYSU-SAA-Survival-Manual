@@ -9,4 +9,7 @@
 - 操作简单，学习成本低：[剪映](https://www.capcut.cn/)
 - DDL迫在眉睫，直接在PPT上进行修改：[WPS](https://software.sysu.edu.cn/wps365)
 
-非视频编辑软件，但也很实用的[ffmpeg](https://ffmpeg.org/)，你在做CV相关的项目的时候有可能会用到，比如对视频逐帧提取图片。
+其他：
+
+- [FFmpeg](https://ffmpeg.org/)：提取视频字幕，视频格式转换
+- OpenCV(Python)：把视频画面逐帧导出
