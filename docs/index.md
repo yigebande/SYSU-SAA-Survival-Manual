@@ -1,6 +1,6 @@
 # **前言**
 
-![](images/ebt.png)
+![](images/ebt_blue.png)
 
 ## **欢迎来到中山大学航空航天学院生存手册！**
 
