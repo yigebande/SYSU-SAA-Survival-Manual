@@ -35,6 +35,9 @@ NumPy是Python的第三方库，只要你的电脑能运行`.py`文件，那么�
 NumPy相比上面两个软件的优势是轻量化、体积小，并且在此基础上基本功能齐全。
 
 ## 卡西欧991及相对应手机模拟器
+- **官方教程：** [师生资料下载](https://www.casio.com.cn/support/calculators/content/download/shishengziliao/)
+- **来自HITSZ的教程：** [https://hoa.moe/blog/how-to-use-fx991cn/](https://hoa.moe/blog/how-to-use-fx991cn/)
+
 大二之后的很多专业课的考试都会需要学生自带计算器进行计算，大多数人的选择是卡西欧991（细分的型号很多，按需购买即可），其他的具有科学计算功能的计算器也是可以的。
 
 如果你去图书馆做作业的时候忘记带计算器，那么在手机上下载一个卡西欧991模拟器会是一个很好的选择。模拟器的下载资源很多，网上一搜索就能找到。

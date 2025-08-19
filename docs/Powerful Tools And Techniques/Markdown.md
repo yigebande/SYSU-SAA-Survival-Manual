@@ -4,6 +4,7 @@
 - **学习资源：** B站上有很多Markdown快速入门视频，按需选择即可
 - **上手难度：** 几乎为零
 - **适用场景：** 见[链接](https://www.markdown.cn/docs/intro) **Markdown 有什么用**部分
+- **数学公式教程：** [HITSZ | 在Markdown文档中使用LaTeX输入公式](https://hoa.moe/blog/markdown-and-latex/basic-of-latex-with-markdown/)
 > 这份文档的所有内容都是用Markdown来写的。
 
 很多时候，那些涉及到编程的专业课会要求学生在实验报告里面呈现代码和思路，每到这个时候我就很无奈。
